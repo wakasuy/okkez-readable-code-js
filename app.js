@@ -17,5 +17,16 @@ function displayAllRecipes() {
     }
     alert(recipe_text);
 }
+
+function displayRecipe(id) {
+    for (var i = 0; i < recipes.length; i++) {
+        var recipe = recipes[i];
+        if (recipe["id"] === id) {
+            recipe_text += recipe["id"] + ":" + recipe["name"] + "\n";
+            alert(recipe_text);
+            return;
+        }
+    }
+    alert("Recipe not found: " + id);
 }
 
