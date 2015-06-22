@@ -1,1 +1,4 @@
-# okkez-readable-code-js
+# 言語
+
+JavaScript
+ 
