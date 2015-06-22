@@ -1,1 +1,1 @@
-alert("オムライス");
+alert(recipe);
