@@ -10,9 +10,12 @@ var parseQueryString = function parseQueryString(options) {
     return parameters;
 };
 
-for (var i = 0; i < recipes.length; i++) {
-    var recipe = recipes[i];
-    recipe_text += recipe["id"] + ":" + recipe["name"] + "\n";
+function displayAllRecipes() {
+    for (var i = 0; i < recipes.length; i++) {
+        var recipe = recipes[i];
+        recipe_text += recipe["id"] + ":" + recipe["name"] + "\n";
+    }
+    alert(recipe_text);
+}
 }
 
-alert(recipe_text);
