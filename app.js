@@ -30,3 +30,13 @@ function displayRecipe(id) {
     alert("Recipe not found: " + id);
 }
 
+var parameters = parseQueryString();
+var target_id = parameters["id"];
+
+if (target_id) {
+    displayRecipe(parseInt(target_id));
+} else {
+    displayAllRecipes();
+}
+
+
