@@ -13,7 +13,7 @@ var parseQueryString = function parseQueryString(options) {
 function displayAllRecipes() {
     for (var i = 0; i < recipes.length; i++) {
         var recipe = recipes[i];
-        recipe_text += recipe["id"] + ":" + recipe["name"] + "\n";
+        recipe_text += recipe["id"] + ":" + recipe["name"] + ":" + recipe["explain"] + "\n";
     }
     alert(recipe_text);
 }
@@ -22,7 +22,7 @@ function displayRecipe(id) {
     for (var i = 0; i < recipes.length; i++) {
         var recipe = recipes[i];
         if (recipe["id"] === id) {
-            recipe_text += recipe["id"] + ":" + recipe["name"] + "\n";
+            recipe_text += recipe["id"] + ":" + recipe["name"] + ":" + recipe["explain"] + "\n";
             alert(recipe_text);
             return;
         }
